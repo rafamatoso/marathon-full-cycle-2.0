@@ -24,3 +24,7 @@ A Maratona Full Cycle é um evento 100% online e gratuito onde você entenderá,
 - Logstash e Elastic Search
 - Go Lang
 - Node.js
+
+## Sobre a resolução dos desafios
+
+Sempre que um novo desafio for lançado, adicionarei uma pasta referente ao desafio, mesmo que essa contenha arquivos redundantes e/ou atualizados com o desafio anterior.
