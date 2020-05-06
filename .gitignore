@@ -4,9 +4,6 @@ dist/
 # dependencies
 node_modules/
 
-# misc
-.env.example
-
 # Logs
 logs
 *.log
@@ -37,3 +34,4 @@ lerna-debug.log*
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+

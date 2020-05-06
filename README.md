@@ -6,7 +6,7 @@
 
 ![GitHub top language](https://img.shields.io/github/languages/top/rafamatoso/marathon-full-cycle-2.0)
 ![GitHub last commit](https://img.shields.io/github/last-commit/rafamatoso/marathon-full-cycle-2.0)
-![GitHub repo size](https://img.shields.io/github/repo-size/rafamatoso/marathon-full-cycle-2.0r)
+![GitHub repo size](https://img.shields.io/github/repo-size/rafamatoso/marathon-full-cycle-2.0)
 
 A Maratona Full Cycle é um evento 100% online e gratuito onde você entenderá, através de um estudo de caso, como você poderá se tornar um Full Cycle Developer, ou seja, um desenvolvedor capaz de criar aplicações de ponta a ponta. Da arquitetura até o deploy e monitoramento.
 
