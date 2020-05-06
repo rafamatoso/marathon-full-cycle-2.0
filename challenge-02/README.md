@@ -138,3 +138,5 @@ TYPEORM_MIGRATIONS_DIR=src/migrations
 ```
 npm run typeorm migration:create -- -n maratona
 ```
+
+### Concluído: [Dockerhub](https://hub.docker.com/repository/docker/rafaelmatoso/api_rest_nestjs_fc2)

@@ -18,3 +18,5 @@ O primeiro passo para que você consiga acompanhar muito bem a Maratona é ter o
 8. Postar nos comentários do vídeo a URL da sua imagem para que possamos executar
 
 > Dica Importante: Desenvolvemos um Guia Rápido de Docker. Ele está no [Canal do Telegram](https://t.me/devfullcycle). Para acessar e baixar, [clique aqui](https://t.me/devfullcycle)
+
+### Concluído: [Dockerhub](https://hub.docker.com/repository/docker/rafaelmatoso/node_server_fc2)

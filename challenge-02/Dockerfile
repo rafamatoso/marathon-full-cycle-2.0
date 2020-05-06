@@ -1,10 +1,9 @@
-FROM node:14.1-alpine
-RUN mkdir -p /home/node/app/node_modules
-RUN chown -R node:node /home/node/app
-WORKDIR /home/node/app
+FROM node:10.16.0
+WORKDIR /usr/src/app
+
 COPY ./package.json .
-USER node
 RUN npm install
-COPY --chown=node:node . .
+COPY . .
+RUN npm run build
 EXPOSE 3000
-CMD [ "npm", "run", "start:prod" ]
+CMD ["npm", "run", "start:prod"]
