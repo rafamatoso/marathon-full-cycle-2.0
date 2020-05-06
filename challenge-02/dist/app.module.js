@@ -6,16 +6,24 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+require("reflect-metadata");
 const common_1 = require("@nestjs/common");
-const app_controller_1 = require("./app.controller");
-const app_service_1 = require("./app.service");
+const typeorm_1 = require("@nestjs/typeorm");
+const maratona_module_1 = require("./maratona/maratona.module");
+const maratona_entity_1 = require("./maratona/maratona.entity");
 let AppModule = class AppModule {
 };
 AppModule = __decorate([
     common_1.Module({
-        imports: [],
-        controllers: [app_controller_1.AppController],
-        providers: [app_service_1.AppService],
+        imports: [
+            typeorm_1.TypeOrmModule.forRoot({
+                type: 'sqlite',
+                database: 'database.sqlite',
+                synchronize: true,
+                entities: [maratona_entity_1.Maratona],
+            }),
+            maratona_module_1.MaratonaModule,
+        ],
     })
 ], AppModule);
 exports.AppModule = AppModule;

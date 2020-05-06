@@ -7,13 +7,18 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const common_1 = require("@nestjs/common");
-let AppService = class AppService {
-    getHello() {
-        return 'Maratona Full Cycle 2.0';
-    }
+const maratona_controller_1 = require("./maratona.controller");
+const maratona_service_1 = require("./maratona.service");
+const typeorm_1 = require("@nestjs/typeorm");
+const maratona_entity_1 = require("./maratona.entity");
+let MaratonaModule = class MaratonaModule {
 };
-AppService = __decorate([
-    common_1.Injectable()
-], AppService);
-exports.AppService = AppService;
-//# sourceMappingURL=app.service.js.map
+MaratonaModule = __decorate([
+    common_1.Module({
+        imports: [typeorm_1.TypeOrmModule.forFeature([maratona_entity_1.Maratona])],
+        controllers: [maratona_controller_1.MaratonaController],
+        providers: [maratona_service_1.MaratonaService],
+    })
+], MaratonaModule);
+exports.MaratonaModule = MaratonaModule;
+//# sourceMappingURL=maratona.module.js.map

@@ -1,11 +1,18 @@
 import 'reflect-metadata';
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
+import { TypeOrmModule } from '@nestjs/typeorm';
+import { MaratonaModule } from './maratona/maratona.module';
+import { Maratona } from './maratona/maratona.entity';
 
 @Module({
-  imports: [],
-  controllers: [AppController],
-  providers: [AppService],
+  imports: [
+    TypeOrmModule.forRoot({
+      type: 'sqlite',
+      database: 'database.sqlite',
+      synchronize: true,
+      entities: [Maratona],
+    }),
+    MaratonaModule,
+  ],
 })
 export class AppModule {}
