@@ -1,9 +1,11 @@
 # compiled output
-/dist
-/node_modules
+dist/
 
-# environments
-.env
+# dependencies
+node_modules/
+
+# misc
+.env.example
 
 # Logs
 logs
